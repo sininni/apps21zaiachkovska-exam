@@ -21,6 +21,7 @@ public class JSONAppTest {
                         "{'course': 'English', 'mark': 5, 'passed': true}," +
                         "{'course': 'Math', 'mark': 2, 'passed': false}" +
                         "]}";
+        System.out.println(jsonObject.toJson());
 
         JSONAssert.assertEquals(expectedJSON, jsonObject.toJson(), true);
     }
