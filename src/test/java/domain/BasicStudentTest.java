@@ -17,6 +17,7 @@ public class BasicStudentTest {
         JsonObject jsonObject = basicStudent.toJsonObject();
 
         String expectedJSON = "{'name': 'Hanna', 'surname': 'Gopko', 'year': 1}";
+//        System.out.println(jsonObject.toJson());
 
         JSONAssert.assertEquals(expectedJSON, jsonObject.toJson(), true);
     }
